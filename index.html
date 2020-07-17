@@ -2,14 +2,22 @@
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">
 <html lang="en" dir="ltr">
 <head>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles.css">
   <meta charset="utf-8">
 </head>
 <body>
   <section class="left-bar">
-    <section>
-      <img src="" alt="">
-      <button type="button" name="user-dropdown"></button>
+    <section class="user">
+      <img src="./images/bananas.jpg" alt="Bananas yo!">
+      <div class="dropdown">
+        <button class="dropbtn" type="button" name="user-dropdown">Banana Man!</button>
+        <div class="dropdown-content">
+          <a href="#">What are you doing???</a>
+          <a href="#">This is a restricted area!!</a>
+          <a href="#">Please stop! You're hurting me!</a>
+          <a href="#">...</a>
+        </div>
+      </div>
     </section>
     <hr>
     <p>Main</p>
@@ -27,33 +35,34 @@
     <button type="button" name="social">SOCIAL</button>
     <hr>
     <p>Categories</p>
-    <button type="button" name="administrative">ADMINISTRATIVE</button>
-    <button type="button" name="design">DESIGN</button>
-    <button type="button" name="executive">EXECUTIVE</button>
-    <button type="button" name="human-resources">HUMAN RESOURCES</button>
+    <button type="button" name="administrative">Administrative</button>
+    <button type="button" name="design">Design</button>
+    <button type="button" name="executive">Executive</button>
+    <button type="button" name="resources-resources">Hesources Resources</button>
   </section>
   <section class='main'>
     <section class='search'>
-      <button type="button" name="list"></button>
-      <input type="text" name="search" placeholder="search" value="">
-      <button type="button" name="profile-plus"></button>
-      <button type="button" name="movie-marker"></button>
-      <button type="button" name="nine-dots"></button>
+      <!-- could be a header -->
+      <button type="button" name="list">"list"</button>
+      <input class="search-bar" type="text" name="search" placeholder="search" value="">
+      <button type="button" name="profile-plus">"profile+"</button>
+      <button type="button" name="movie-marker">"movie marker"</button>
+      <button type="button" name="nine-dots">"9 dots"</button>
     </section>
     <section class='nav'>
-      <section>
-        <section>
-          <p>Customer Service Representative</p>
-          <section>
+      <section class="nav-top">
+        <section class="customer">
+          <p class="job-title">Customer Service Representative</p>
+          <section class='customer-specifics'>
             <p>San Franscisco, CA</p>
             <button type="button" name="button">Preview this post</button>
           </section>
         </section>
-        <section>
-          <button type="button" name="open"></button>
-          <button type="button" name="banner"></button>
-          <button type="button" name="pencil"></button>
-          <button type="button" name="trash"></button>
+        <section class='customer-buttons'>
+          <button type="button" name="open">"open"</button>
+          <button type="button" name="banner">"banner"</button>
+          <button type="button" name="pencil">"pencil"</button>
+          <button type="button" name="trash">"trash"</button>
         </section>
       </section>
       <section class="selectors">
@@ -66,58 +75,76 @@
         <button type="button" name="notifications">NOTIFICATIONS</button>
       </section>
     </section>
+    <hr>
     <section class='body'>
       <section class='body-top'>
         <section class='body-top-left'>
           <section class='circle-img'>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="./images/circle.png" alt="">
+            <img src="./images/circle.png" alt="">
+            <img src="./images/circle.png" alt="">
           </section>
-          <img src="" alt="">
+          <button class='totals-button' type="button" name="totals">TOTALS Out of 5231 views</button>
         </section>
         <section class='body-top-right'>
-          <img src="" alt="">
-          <img src="" alt="">
+          <img src="./images/bar-graph-fruit.svg" alt="">
+          <button class='applicants-button' type="button" name="applicants">APLICANTS/DAY</button>
         </section>
       </section>
       <hr>
       <section class='body-bottom'>
         <section class='body-bottom-left'>
+          <!-- do I need body-bottom-left if I already have article? -->
           <article class="article">
             <section class='article-top'>
               <p>JOB DESCRIPTION</p>
               <button type="button" name="edit">EDIT</button>
             </section>
-            <p>POSITION TITLE</p>
-            <p>Customer Service Representatinve</p>
+            <section>
+              <p>POSITION TITLE</p>
+              <p>Customer Service Representatinve</p>
+            </section>
             <hr>
-            <p>LOCATION</p>
-            <p>San Franscisco, CA</p>
+            <section>
+              <p>LOCATION</p>
+              <p>San Franscisco, CA</p>
+            </section>
             <hr>
-            <p>EMPLOYMENT TYPE</p>
-            <p>Full-time</p>
+            <section>
+              <p>EMPLOYMENT TYPE</p>
+              <p>Full-time</p>
+            </section>
             <hr>
-            <p>EXPERIENCE</p>
-            <p>Mid-level</p>
+            <section>
+              <p>EXPERIENCE</p>
+              <p>Mid-level</p>
+            </section>
             <hr>
-            <p>STATUS</p>
-            <p>Open</p>
+            <section>
+              <p>STATUS</p>
+              <p>Open</p>
+            </section>
             <hr>
-            <p>DESCRIPTION</p>
-            <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
+            <section>
+              <p>DESCRIPTION</p>
+              <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
+            </section>
             <hr>
-            <p>HIRING LEAD</p>
-            <p><img src="" alt=""> Tom Tizzy</p>
+            <section>
+              <p>HIRING LEAD</p>
+              <p><img src="" alt=""> Tom Tizzy</p>
+            </section>
             <hr>
-            <p>APPROVED SALARY</p>
-            <p>$58,000</p>
+            <section>
+              <p>APPROVED SALARY</p>
+              <p>$58,000</p>
+            </section>
           </article>
         </section>
         <section class='body-bottom-right'>
-          <button type="button" name="facebook"></button>
-          <button type="button" name="twitter"></button>
-          <button type="button" name="linkedin"></button>
+          <button type="button" name="facebook">FACEBOOK</button>
+          <button type="button" name="twitter">TWITTER</button>
+          <button type="button" name="linkedin">LINKEDIN</button>
           <p>Link to this Job</p>
           <p>Lorem ipsum dolar sit arnet, consectetur adipis cing elt, integer molis neque eget vestibgend</p>
           <form class="" action="index.html" method="post">
