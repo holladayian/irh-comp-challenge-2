@@ -21,20 +21,20 @@ Push your final work to github pages
 
 This was the picture we were given to go off of from the beginning
 <br />
-![image o static comp reference](./images/sc-og.pmg)
+![image o static comp reference](images/sc-og.pmg)
 <br />
 
 This is a picture of my project at 100% width
 <br />
-![image of my project at 100% width](./images/sc-ng1.pmg)
+![image of my project at 100% width](images/sc-ng1.pmg)
 <br />
 
 This is a picture of my project at 100% width
 <br />
-![image of my project at 1230 width](./images/sc-ng2.pmg)
+![image of my project at 1230 width](images/sc-ng2.pmg)
 <br />
 
 This is a picture of my project at 100% width
 <br />
-![image of my project at 820 width](./images/sc-ng3.pmg)
+![image of my project at 820 width](images/sc-ng3.pmg)
 <br />
