@@ -4,7 +4,7 @@ body {
 }
 
 hr {
-  width: 100%
+  width: 95%
 }
 
 .left-bar {
@@ -22,6 +22,7 @@ hr {
   margin: 10px;
   margin-top: 20px;
   font-size: 12px;
+  text-align: left;
 }
 
 .user {
@@ -68,6 +69,11 @@ hr {
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+.nighty-night:active body {
+  background-color: black;
+  color: white
+}
+
 
 .left-bar > hr {
   width: 95%;
@@ -76,7 +82,7 @@ hr {
 
 .left-bar > p {
   color: #919EAE;
-  font-size: 8px;
+  font-size: 10px;
   margin-left: 10px
 }
 
@@ -86,10 +92,11 @@ hr {
   justify-content: flex-end;
 }
 
+/* add flex to the parent of these buttons, look into space-around/between */
 .user > button {
-    background-color: Transparent;
-    border: none;
-    color: #9DD2F6
+  background-color: Transparent;
+  border: none;
+  color: #9DD2F6
 }
 
 .search {
@@ -99,7 +106,7 @@ hr {
 
 .search > button {
   background-color: Transparent;
-  width: 45px
+  width: 50px
 }
 
 .search > button:hover {
@@ -110,6 +117,7 @@ hr {
 .search-bar {
   width: 100%
 }
+/* find what else is prhibitoing the set width */
 
 .nav-top {
   display: flex;
@@ -145,12 +153,18 @@ flex-direction: column;
   font-size: 20px;
   border-radius: 10px;
   margin: 5px;
+  height: 35px
 }
 
 .job-title {
   font-size: 24px;
 }
 
+.selectors {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-left: 2em;
+}
 .selectors button {
   margin-left: 2em;
   border-right: none;
@@ -159,7 +173,9 @@ flex-direction: column;
   border-bottom-color: Transparent;
 }
 
-.selectors button:hover {border-bottom-color: #9DD2F6;}
+.selectors button:hover {
+  border-bottom-color: #9DD2F6;
+ }
 
 .circle-img {
   display: flex;
@@ -175,10 +191,12 @@ flex-direction: column;
     border-radius: 12px;
     background-color: white;
     border-width: 1px;
+    margin-bottom: 30px
 }
 
 .body {
   background-color: #EDF2F6;
+  width: 100%
 }
 
 .body-top-left {
@@ -301,6 +319,7 @@ flex-direction: column;
   .body-bottom {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .body-bottom-right {
     align-items: center;
@@ -312,14 +331,11 @@ flex-direction: column;
   .body-top {
     flex-direction: column;
   }
-  .body-bottom {
-    align-items: center;
-  }
-  .facebook {
-  }
+  /* .body-bottom {
+  } */
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 942px) {
   .selectors {
     display: flex;
     flex-direction: column;
@@ -329,3 +345,26 @@ flex-direction: column;
     margin-left: 0px
   }
 }
+
+@media only screen and (max-width: 816px) {
+  body {
+    flex-direction: column;
+  }
+  .left-bar {
+    flex-direction: column;
+  }
+  .left-bar button {
+    display: none;
+  }
+  .user button {
+    display: flex
+  }
+  .left-bar p {
+    display: none;
+  }
+  .left-bar hr {
+    display: none;
+  }
+}
+
+/* possibly reorganize by html parent-child tag */
