@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: row;
-  /* transform:skew(60deg, -30deg) scaleY(.66667); */
+  transform:skew(60deg, -30deg) scaleY(.66667);
   width: 75%
 }
 
