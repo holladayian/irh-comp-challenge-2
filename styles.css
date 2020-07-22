@@ -1,6 +1,8 @@
 body {
   display: flex;
   flex-direction: row;
+  /* transform:skew(60deg, -30deg) scaleY(.66667); */
+  width: 75%
 }
 
 hr {
@@ -10,7 +12,10 @@ hr {
 .left-bar {
   display: flex;
   flex-direction: column;
-  background-color: #354151;
+  background-color: #fff;
+  box-shadow:
+      inset 60px 0 80px #0ff,
+      inset -60px 0 80px #f0f;
 }
 
 .left-bar > button {
@@ -69,7 +74,7 @@ hr {
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.nighty-night:active body {
+.nighty-night:active .nighty-night {
   background-color: black;
   color: white
 }
@@ -90,13 +95,18 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: #fff;
+  box-shadow:
+      inset 60px 0 120px #f0f,
+      inset -60px 0 120px #0ff;
+
 }
 
 /* add flex to the parent of these buttons, look into space-around/between */
 .user > button {
   background-color: Transparent;
   border: none;
-  color: #9DD2F6
+  color: #9DD2F6;
 }
 
 .search {
@@ -182,6 +192,19 @@ flex-direction: column;
   flex-direction: row;
 }
 
+.circle-img img {
+  animation: rotation 200s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .body-top img {
   height: 15em;
   margin-bottom: 2em;
@@ -196,7 +219,14 @@ flex-direction: column;
 
 .body {
   background-color: #EDF2F6;
-  width: 100%
+  width: 100%;
+  box-shadow:
+      inset 60px 0 120px #f0f,
+      inset -60px 0 120px #0ff;
+}
+
+button:active button {
+  transform:skew(60deg, -30deg) scaleY(.66667);
 }
 
 .body-top-left {
@@ -250,7 +280,8 @@ flex-direction: column;
   display: flex;
   align-items: center;
   color: white;
-  background-color: #6E7F95
+  background-color: #f0f;
+  border: #0ff
 }
 
 .article-top ~ section {
@@ -293,15 +324,24 @@ flex-direction: column;
 }
 
 .facebook {
-  background-color: #4C6DC2
+  background-color: #4C6DC2;
+  box-shadow:
+    inset 60px 0 80px #0ff,
+    inset -60px 0 80px #f0f;
 }
 
 .twitter {
-  background-color: #04A8EF
+  background-color: #04A8EF;
+  box-shadow:
+      inset 60px 0 20px #0ff,
+      inset -60px 0 80px #f0f;
 }
 
 .linkedin {
-  background-color: #027DBB
+  background-color: #027DBB;
+  box-shadow:
+    inset 60px 0 40px #f0f,
+    inset -60px 0 120px #0ff;
 }
 
 .body-bottom-right > input {
